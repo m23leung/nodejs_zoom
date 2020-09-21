@@ -75,6 +75,12 @@ video {
 
 .main__right {
     display: flex;
+    background-color: #242324;
+    border-left: 1px solid #3D3D42;
+}
+
+.main__right_chat {
+    display: flex;
     flex-direction: column;
     background-color: #242324;
     border-left: 1px solid #3D3D42;

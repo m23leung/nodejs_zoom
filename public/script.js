@@ -127,3 +127,22 @@ const setPlayVideo = () => {
         `
     document.querySelector('.main__video_button').innerHTML = html;
 }
+
+const showHideChat = () => {
+    console.log("SHOW HIDE CHAT");
+    let chatWindow = document.querySelector('.main__right_chat');
+
+    if (chatWindow.style.display != 'none') {
+        chatWindow.style.display = 'none';
+        // TODO: Maximize the window 
+    } else {
+        chatWindow.style.display = 'block';
+        // TODO: Minimize the window
+    }
+
+}
+
+const leaveMeeting = () => {
+    var win = window.open("about:blank", "_self");
+    win.close();
+}
